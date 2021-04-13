@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="UK">
+{% load static %}
+
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Alexey Kititsa studio</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/scrolling-nav.css' %}" rel="stylesheet">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&  display=swap" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Китица и партнёры (+лого?)</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Про нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Примеры проектов</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#calc">Калькулятор стоимости</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-light text-dark">
+    <div class="col-lg-8 mx-auto text-center">
+      <h2>Добро пожаловать на страницу компании <br> 
+        <strong>"Китица и партнёры"</strong></h2>
+      <br>
+      <img src="{% static 'images/logo.jpg' %}" class="rounded-circle" alt="Cinque Terre">
+      <br>
+      <p class="text-justify">
+        В нашей многолетней практике мы нередко сталкиваемся с ситуациями, когда крупные серьезные ответственные объекты оснащаются сотнями камер, и при этом проектные решения оставляют желать лучшего. Складывается впечатление, что к проекту подошли формально, как к обычной задаче, не осознавая масштаб, и работу выполнили как обычную рутину, не вдаваясь ни в особенности объекта, ни в специфику заказчика.
+      </p>
+      <p class="text-justify">
+        На самом деле, при проектировании крупной системы видеонаблюдения, важно учитывать достаточно много особенностей. Они касаются как технических вопросов выбора оборудования и проектных решений, так и непосредственно работы специалиста над крупным проектом, т.н. административная часть работы. Крупный проект видеонаблюдения - это не просто много работы, а нечто большее!
+      </p>
+      <p class="text-justify">
+      Собрав этот опыт, и осознав факторы, которые характерны для крупной системы видеонаблюдения, мы решили донести эту информацию до наших партнеров. Как говорится, подстелить солому и убрать грабли в сарай. 
+      </p>
+    </div>
+  </header>
+
+  <section id="about" class="pb-5">
+        <div class="col-lg-8 mx-auto">
+          <h2>Про нас</h2>
+          <p class="lead">В перечень наших услуг входит:</p>
+          <ul>
+            <li>Разработка систем видеонаблюдения</li>
+            <li>Разработка современных систем управления доступом</li>
+            <li>Разработка систем автоматического пожаротушения</li>
+            <li>Разработка систем разработки разрабатываемых модулей</li>
+            <li>Вызов девочек для проведения досуга пока клиент ждет от нас разработку</li>
+          </ul>
+        </div>
+  </section>
+
+  <section id="services" class="bg-light">
+          <div id="team" class="container col-lg-8 mx-auto">
+            <H2>Примеры проектов</H2>
+            <p style="color:red; ">(предлагаю тут всунуть штук 6 самых крутых и внизу ссылка на страницу со всеми проектами)</p>
+            <div class="row">
+              <!-- Team member -->
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">                      
+                          <div class="frontside">
+                              <div class="card">
+                                <img class="card-img-top" src="https://radako.com.ua/sites/default/files/images/124232.jpg" alt="card image">
+                                  <div class="card-body text-center">
+                                      <h4 class="card-title">Конституционный суд Украины</h4>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card">
+                                  <div class="card-body text-center mt-4">
+                                      <p class="card-text">
+                                        Оборудование пожарной сигнализацией здания конституционного суда Украины. В данном проекте была осуществлена разработка проектной документации по зданию Конституционного суда. Было проведено обследование здания с выездом на объект. Здание оборудовалось сигнализацией на основании системы Меридиан. Общая площадь здания 20 000м2.
+                                      </p>
+                                      <button class="btn btn-warning">Смотреть полное описание</button>
+                                      
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- ./Team member -->
+              <!-- Team member -->
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">                      
+                          <div class="frontside">
+                              <div class="card">
+                                <img class="card-img-top" src="https://radako.com.ua/sites/default/files/images/124232.jpg" alt="card image">
+                                  <div class="card-body text-center">
+                                      <h4 class="card-title">Конституционный суд Украины</h4>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card">
+                                  <div class="card-body text-center mt-4">
+                                      <h4 class="card-title">Конституционный суд Украины</h4>
+                                      <p class="card-text">Тут краткое описание по пунктам:
+                                        <ul>
+                                          <li>Сделали видеонаблюдение</li>
+                                          <li>Выпили кофе с прорабом</li>
+                                          <li>Попиздели за жизнь</li>
+                                          <li>Поехали домой</li>
+                                        </ul>
+                                      </p>
+                                      <button class="btn btn-warning">Смотреть полное описание</button>
+                                      
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- ./Team member -->
+              <!-- Team member -->
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">                      
+                          <div class="frontside">
+                              <div class="card">
+                                <img class="card-img-top" src="https://radako.com.ua/sites/default/files/images/124232.jpg" alt="card image">
+                                  <div class="card-body text-center">
+                                      <h4 class="card-title">Конституционный суд Украины</h4>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card">
+                                  <div class="card-body text-center mt-4">
+                                      <h4 class="card-title">Конституционный суд Украины</h4>
+                                      <p class="card-text">Тут краткое описание по пунктам:
+                                        <ul>
+                                          <li>Сделали видеонаблюдение</li>
+                                          <li>Выпили кофе с прорабом</li>
+                                          <li>Попиздели за жизнь</li>
+                                          <li>Поехали домой</li>
+                                        </ul>
+                                      </p>
+                                      <button class="btn btn-warning">Смотреть полное описание</button>
+                                      
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- ./Team member -->
+              <!-- Team member -->
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">                      
+                          <div class="frontside">
+                              <div class="card">
+                                <img class="card-img-top" src="https://radako.com.ua/sites/default/files/images/124232.jpg" alt="card image">
+                                  <div class="card-body text-center">
+                                      <h4 class="card-title">Конституционный суд Украины</h4>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card">
+                                  <div class="card-body text-center mt-4">
+                                      <h4 class="card-title">Конституционный суд Украины</h4>
+                                      <p class="card-text">Тут краткое описание по пунктам:
+                                        <ul>
+                                          <li>Сделали видеонаблюдение</li>
+                                          <li>Выпили кофе с прорабом</li>
+                                          <li>Попиздели за жизнь</li>
+                                          <li>Поехали домой</li>
+                                        </ul>
+                                      </p>
+                                      <button class="btn btn-warning">Смотреть полное описание</button>
+                                      
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- ./Team member -->
+              <!-- Team member -->
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">                      
+                          <div class="frontside">
+                              <div class="card">
+                                <img class="card-img-top" src="https://radako.com.ua/sites/default/files/images/124232.jpg" alt="card image">
+                                  <div class="card-body text-center">
+                                      <h4 class="card-title">Конституционный суд Украины</h4>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card">
+                                  <div class="card-body text-center mt-4">
+                                      <h4 class="card-title">Конституционный суд Украины</h4>
+                                      <p class="card-text">Тут краткое описание по пунктам:
+                                        <ul>
+                                          <li>Сделали видеонаблюдение</li>
+                                          <li>Выпили кофе с прорабом</li>
+                                          <li>Попиздели за жизнь</li>
+                                          <li>Поехали домой</li>
+                                        </ul>
+                                      </p>
+                                      <button class="btn btn-warning">Смотреть полное описание</button>
+                                      
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- ./Team member -->
+              <!-- Team member -->
+              <div class="col-xs-12 col-sm-6 col-md-6">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">                      
+                          <div class="frontside">
+                              <div class="card">
+                                <img class="card-img-top" src="https://radako.com.ua/sites/default/files/images/124232.jpg" alt="card image">
+                                  <div class="card-body text-center">
+                                      <h4 class="card-title">Конституционный суд Украины</h4>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                              <div class="card">
+                                  <div class="card-body text-center mt-4">
+                                      <h4 class="card-title">Конституционный суд Украины</h4>
+                                      <p class="card-text">Тут краткое описание по пунктам:
+                                        <ul>
+                                          <li>Сделали видеонаблюдение</li>
+                                          <li>Выпили кофе с прорабом</li>
+                                          <li>Попиздели за жизнь</li>
+                                          <li>Поехали домой</li>
+                                        </ul>
+                                      </p>
+                                      <button class="btn btn-warning">Смотреть полное описание</button>                                    
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- ./Team member -->
+              <div class="text-center">
+                <button class="btn btn-dark">Смотреть все проекты</button>
+              </div>
+            </div>
+         </div>
+  </section>
+
+
+  <section id="calc" class="pb-5 bg-white">
+        <div class="col-lg-8 mx-auto">
+          <h2>КАЛЬКУЛЯТОР СТОИМОСТИ ПРОЕКТА</h2>
+          <p class="lead">В перечень наших услуг входит:</p>
+          <ul>
+            <li>Разработка систем видеонаблюдения</li>
+            <li>Разработка современных систем управления доступом</li>
+            <li>Разработка систем автоматического пожаротушения</li>
+            <li>Разработка систем разработки разрабатываемых модулей</li>
+            <li>Вызов девочек для проведения досуга пока клиент ждет от нас разработку</li>
+          </ul>
+        </div>
+  </section>
+
+
+  <section id="contact" class="bg-light">
+        <div class="col-lg-8 mx-auto">
+          <h2>Контактная информация</h2>
+          <h5>Телефон: +38-098-123-45-67, +7-700-123-45-67</h5>
+          <h5>email: <a href="mailto:kititsa@gmail.com">kititsa@gmail.com</a></h5>
+          <div id="kylform">
+              <div class="kylform_header"><strong>Обратная связь</strong></div>
+              <form action="#" method="post" autocomplete="off">
+                  <div class="pad">
+                      <input type="text" name="name" class="ico_name" placeholder="Имя" style="width:49%">
+                      <input type="text" name="phone" class="ico_phone" placeholder="Телефон или имейл"style="width:50%">
+                      <br><br>
+                      <p class="mb-0"><b>Текст сообщения:</b></p>
+                      <p><textarea rows="5" name="text" style="width:100%"></textarea></p>
+                      <input type="submit" id="send" value="Отправить">
+                  </div>
+              </form>
+          </div>
+        </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Тут сведения о разработке сайт, можно всунуть контакты в соцсетях</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="{% static 'js/scrolling-nav.js' %}"></script>
+
+</body>
+
+</html>
