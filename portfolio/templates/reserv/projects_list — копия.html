@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+    <ul>
+    {% for project in object_list %}
+        <li> {{ project.title }} <br>
+        	tags: 
+        	{% for tag in project.project_type.all %}
+        		{% if not forloop.first %}|{% endif %}
+        		{{tag}}
+        	{% endfor %}
+        	<br>
+            systems: 
+            {% for system in project.systems_in_use.all %}
+                {% if not forloop.first %}|{% endif %}
+                    {{system}}
+            {% empty %}
+                no systems, sorry)
+            {% endfor %}
+            <br>
+        <!-- NO DESCRIPTION -->
+         {% if project.description %} 
+         		{{ project.description }} <br>
+         {% endif %}
+         Опубликовано: {{ project.created|date:'d.m.Y'}} года.
+       </li>
+    {% empty %}
+        <li>No projects yet.</li>
+    {% endfor %}
+    </ul>
+
+{% endblock content %}
