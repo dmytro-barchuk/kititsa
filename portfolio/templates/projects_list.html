@@ -2,12 +2,15 @@
 {% block content %}
 <!-- Masthead-->
 <header class="masthead bg-light text-dark text-justify">
-    <div class="container d-flex align-items-center flex-column">
+    <div class="container-fluid col-lg-10 mx-auto">
         {% load static %}
         
         <!-- Masthead Heading-->
-        <h1 class="masthead-heading text-uppercase mb-0 text-center">Проектирование для копателей</h1>
-        <img class="img-fluid rounded" src="{% static 'images/about.jpg' %}" alt="no" style="max-width: 800px">
+        <h2 class="mb-0 p-2 text-center">Проектирование для копателей</h2>
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+        </div>
+        <img class="img-fluid rounded mx-auto d-block" src="{% static 'images/about.jpg' %}" alt="no" style="max-width: 60%">
         <!-- Icon Divider-->
         <!-- Masthead Subheading-->
         <p class="text-justify" style="text-indent: 1.5em">
@@ -98,7 +101,7 @@
 
 <!-- About Section-->
 <section class="page-section bg-secondary text-white mb-0" id="about">
-    <div class="container justify-content-center">
+    <div class="container-fluid justify-content-center">
         <!-- About Section Heading-->
         <h2 class="page-section-heading text-center text-uppercase text-white">Тут будет калькулятор</h2>
         <!-- About Section Content-->
@@ -106,11 +109,11 @@
             <div class="col-lg-12 text-center"><p class="lead">
                 <form>
                     <label for="parem1">Parameter 1</label>
-                    <input type="text" size="50" id="param1" placeholder="Площадь"><br>
+                    <input type="text" size="30" id="param1" placeholder="Площадь"><br>
                     <label for="parem2">Parameter 2</label>
-                    <input type="text" size="50" name="param2" placeholder="Второй параметр"><br>
+                    <input type="text" size="30" name="param2" placeholder="Второй параметр"><br>
                     <label for="parem2">Parameter 3</label>
-                    <input type="text" size="50" name="param3" placeholder="3 параметр"><br>
+                    <input type="text" size="30" name="param3" placeholder="3 параметр"><br>
 
                 </form>
             </p></div>
